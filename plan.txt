@@ -1,0 +1,30 @@
+
+delivery notes.
+create table to store delivery notes information
+maintain a batch info of items sent for repair.
+__________________________________________________________
+collumns
+transactionId(pk), deliveryId, TransDate,Staff,FromLocationId,ToLocationId
+|||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-|
+
+Asset transactions
+create table to store transactions per asset, when dispatched, when received back.
+when item 
+______________________________________________________________
+collumns
+Id,TransactionId, deliveryId, AssetId,Qty, TransDate,
+|||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-|
+
+Asset table
+Maintains The Assets.
+AssetId, Model, Make, Description, Value
+
+|||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-||||-|-|-|-|-|-|
+Location table
+Maintains a List of Locations.
+LocationId, Name
+
+
+
+when you dispatch an item, we Log the transactionId which we insert on all lines for assets being transsfered.
+Once Assets are transffered,
